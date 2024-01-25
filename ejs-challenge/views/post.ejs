@@ -1,0 +1,15 @@
+<% include  partials/header.ejs %>
+
+<div class="post_container">
+    <h1><%= titleOfPost %> </h1>
+
+    <p class="para"> <%= contentOfPost %> </p>
+    <div class="btn_containor">
+        <form action="/update_button_clicked" method="post"> <button type="submit" class="btn btn-primary update_btn" value="<%= id %>" name="updateBtn">Update</button> </form>
+        <form action="/delete" method="post"> <button type="submit" class="btn btn-danger delete_btn" value="<%= id %>" name="deleteBtn">Delete</button> </form>
+    </div>
+   
+</div>
+
+
+<% include partials/footer.ejs %>

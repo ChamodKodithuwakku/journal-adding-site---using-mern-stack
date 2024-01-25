@@ -1,0 +1,23 @@
+<% include  partials/header.ejs %>
+<div class="compose_container">
+  <h1 style="font-size: 50px;" class="composeHeader">Compose</h1>
+
+  <form action="/publish" method="post">
+    <div class="mb-3">
+      <label for="title" class="form-label" style="font-size: 20px;">Title</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="composeTitle">
+    
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"  style="font-size: 20px;">Post</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="composePost"></textarea>
+      </div>
+    
+    <button type="submit" class="btn btn-primary" style="width: 100px; height: 35px; margin-top: 10px;">publish</button>
+
+  </form>
+</div>
+
+
+<% include partials/footer.ejs %>
